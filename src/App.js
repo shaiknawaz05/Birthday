@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import TitleMessage from "./components/title/title.component"
+import './App.css'
+import Carousel from "./components/carousel/carousel.component";
+import Invitation from "./pages/invitation/invitation.component";
+import Particles from "react-particles-js";
+import { particlesoptions } from "./particlesoptions";
+import Fade from 'react-reveal/Fade'
+import Container  from "react-bootstrap/Container";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ position: "relative" }}>
+      <Carousel />
+      <TitleMessage />
+      
+      <Particles
+        className="particles particles-box"
+        params={particlesoptions}
+          />
+          <div>
+            <Container className="container-box rounded">
+            <Fade duration={100}>
+            <Invitation/>
+            </Fade>
+          </Container>
+          </div>  
+          
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

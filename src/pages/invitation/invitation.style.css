@@ -1,0 +1,27 @@
+.about {
+    background-color: transparent;
+    font-size: 1.1em;
+  }
+  
+  .profile {
+    max-width: 18em;
+  }
+  
+  .my-details {
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  .font-details {
+    font-size: 3em;
+    font-weight: 500;
+    color:blueviolet;
+    font-family: cursive;
+  }
+.body{
+    background-color: #282c34;
+    color: white;
+    padding: 40px;
+    font-family: Arial;
+    text-align: center;
+}
